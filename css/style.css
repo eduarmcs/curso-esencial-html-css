@@ -79,4 +79,5 @@ pre {
 .hero {
   background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/patron-1.png);
   height: 350px;
+  font-size: 16px;
 }
