@@ -82,11 +82,6 @@ h1 {
   margin-bottom: 16px;
 }
 
-/* h1 + p {
-  margin-bottom: 64px;
-}
- */
-
 hr {
   margin: 64px 0;
 }
@@ -140,17 +135,9 @@ blockquote span::before {
   position: relative;
 }
 
-.main {
-
-}
-
 .wrapper {
   width: 903px;
   margin: auto;
-}
-
-.main-content {
- /*  padding: 20px; */
 }
 
 .hero {
@@ -205,4 +192,3 @@ blockquote span::before {
   left: 0;
   bottom: 0;
 }
-
