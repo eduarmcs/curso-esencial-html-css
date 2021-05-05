@@ -36,6 +36,7 @@ body {
   font-family: 'Roboto', sans-serif;
   /* font-family: charter; */
   color: var(--gray30);
+  margin: 0;
 }
 
 a {
@@ -62,23 +63,66 @@ nav details summary {
 
 h1 {
   font-size: 60px;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+h1 + p {
+  margin-bottom: 64px;
+}
+
+hr {
+  margin: 64px 0;
 }
 
 h2 {
   font-size: 2em;
+  margin: 64px 0 40px;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 1.5em;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-weight: normal;
 }
 
 pre {
   background: #fec62e;
 }
 
+blockquote {
+  margin: 32px 0;
+}
+
 .hero {
   background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/patron-1.png);
   height: 350px;
+}
+
+.section-content {
+  margin-top: 164px;;
+}
+
+.section-content:first-of-type {
+  margin: 0;
+}
+
+.section-content ol li {
+  line-height: 24px;
+}
+
+.section-content ul li {
+  margin-bottom: 16px;
+}
+
+.section-content + hr {
+  display: none;
+}
+
+.section-content img {
+  margin-top: 40px;
 }
 
 .section-content {
@@ -100,3 +144,4 @@ pre {
   height: 4px;
   background: var(--gray30);
 }
+
