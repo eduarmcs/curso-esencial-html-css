@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   /* font-family: charter; */
   color: var(--white30);
   background: #251f24;
@@ -22,7 +22,6 @@ a {
 }
 
 .header {
-
 }
 
 .header-content {
@@ -56,7 +55,6 @@ nav details summary {
 
 p {
   color: var(--white20);
-;
 }
 
 h1 {
@@ -92,7 +90,7 @@ pre {
   border: 8px solid #5551ff;
   box-shadow: -10px 10px 0 0 #abaaf6;
   margin-block-end: 30px;
- /*  border-end-end-radius: 60px; */
+  /*  border-end-end-radius: 60px; */
 }
 
 blockquote {
@@ -123,11 +121,11 @@ blockquote p {
 }
 
 .main-content {
- padding-inline: 16px;
+  padding-inline: 16px;
 }
 
 .hero {
-  background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
   height: 50px;
 }
 
@@ -142,14 +140,15 @@ blockquote p {
 }
 
 .section-content h3 {
- counter-increment: titleList;
+  counter-increment: titleList;
 }
 
 .section-content h3::before {
-  content: counter(titleList, decimal) '. ';
+  content: counter(titleList, decimal) ". ";
 }
 
-.section-content ol, ul li {
+.section-content ol,
+ul li {
   color: var(--white20);
   line-height: 24px;
 }
@@ -162,7 +161,6 @@ blockquote p {
   scroll-behavior: smooth;
   white-space: nowrap;
   font-size: 0;
-
 }
 
 .video {
@@ -209,7 +207,15 @@ blockquote p {
   font-weight: bold;
   font-style: normal;
   line-height: 24px;
+}
 
+.form h2 {
+  margin-block-start: 40px;
+  margin-block-end: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
 }
 
 .form ::-webkit-input-placeholder {
@@ -223,9 +229,28 @@ blockquote p {
   background: var(--white30);
 } */
 
+footer {
+  box-sizing: border-box;
+  background: var(--white30);
+}
+
+footer p {
+  color: #251f24;
+  font-size: 18px;
+  line-height: 44px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.social {
+  text-align: center;
+}
+
 @media screen and (min-width: 1366px) {
   .hero {
-  height: 350px;
+    height: 350px;
   }
   .header {
     position: sticky;
@@ -246,8 +271,25 @@ blockquote p {
   }
 
   h1 {
-      font-size: 60px;
-  margin-block-start: 64px;
+    font-size: 60px;
+    margin-block-start: 64px;
   }
 
+  footer {
+    block-size: 174px;
+    padding-block-start: 48px;
+    margin-block-start: 80px;
+  }
+
+  footer p {
+    color: #251f24;
+    font-size: 32px;
+    margin-block-end: 19px;
+  }
+
+  .social {
+    margin-block-start: 19px;
+    margin-block-end: 45px;
+    text-align: center;
+  }
 }

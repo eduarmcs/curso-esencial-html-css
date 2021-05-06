@@ -305,8 +305,9 @@
           </p>
 
           <section class="section-content">
-            <h2>Sucribete a nuestro newsletter</h2>
+
             <form action="" class="form">
+              <h2>Suscribete a nuestro newsletter</h2>
               <label for="nombre">
                 <input type="text" id="nombre" placeholder="Nombre" autocomplete="name" required>
               </label>
@@ -316,20 +317,34 @@
               <input type="submit" value="Suscribirme">
             </form>
           </section>
-          <script>
-            const $detailsList = document.querySelectorAll("details");
-            $detailsList.forEach(($details) => {
-              $details.querySelector("summary").addEventListener("click", expand);
-            });
-
-            function expand() {
-              $detailsList.forEach(($details) => {
-                $details.removeAttribute("open");
-              });
-            }
-          </script>
         </div>
       </div>
     </main>
+    <footer>
+      <p>© Leonidas Esteban 2021</p>
+      <div class="social">
+        <i class="social-item">
+          <img src="./images/facebook.png" alt="Imagen del logo de Facebook">
+        </i>
+        <i class="social-item">
+          <img src="./images/instagram.png" alt="Imagen del logo de Instagram">
+        </i>
+        <i class="social-item">
+          <img src="./images/twitter.png" alt="Imagen del logo de Twitter">
+        </i>
+      </div>
+    </footer>
+    <script>
+      const $detailsList = document.querySelectorAll("details");
+      $detailsList.forEach(($details) => {
+          $details.querySelector("summary").addEventListener("click", expand);
+          });
+
+      function expand() {
+        $detailsList.forEach(($details) => {
+          $details.removeAttribute("open");
+        });
+      }
+    </script>
   </body>
 </html>
