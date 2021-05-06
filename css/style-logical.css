@@ -22,22 +22,17 @@ a {
 }
 
 .header {
-  position: sticky;
-  inset-block-start: -45px;
+
 }
 
 .header-content {
-  position: relative;
-  inset-block-start: 64px;
+  padding-inline: 20px;
 }
 
 header {
+  margin-block-start: 20px;
   color: var(--white30);
   font-size: 14px;
-  position: absolute;
-  inset-block-start: 0;
-  inset-inline-start: -188px;
-  inline-size: 188px;
 }
 
 header li {
@@ -65,8 +60,8 @@ p {
 }
 
 h1 {
-  font-size: 60px;
-  margin-block-start: 64px;
+  font-size: 40px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
 }
 
@@ -133,7 +128,7 @@ blockquote p {
 
 .hero {
   background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-  height: 350px;
+  height: 50px;
 }
 
 .section-content {
@@ -227,3 +222,32 @@ blockquote p {
   height: 4px;
   background: var(--white30);
 } */
+
+@media screen and (min-width: 1366px) {
+  .hero {
+  height: 350px;
+  }
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content {
+    position: relative;
+    inset-block-start: 64px;
+    padding-inline: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -188px;
+    inline-size: 188px;
+  }
+
+  h1 {
+      font-size: 60px;
+  margin-block-start: 64px;
+  }
+
+}
