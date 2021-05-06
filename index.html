@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style-physical.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./css/style-logical.css" />
+    <!--   <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap"
       rel="stylesheet"
-      />
+      /> -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
       <title>Medium</title>
     </head>
     <body>
@@ -114,7 +116,7 @@
           <blockquote>
             <p>“Este es el inicio de tu carrera como Desarrollador Web”</p>
             <p><span>
-              Leonidas Esteban</p>
+             - Leonidas Esteban</p>
             </span>
           </blockquote>
           </section>
@@ -130,18 +132,18 @@
               del contenido.
             </p>
             <pre>
-            &lt;!DOCTYPE html&gt;
-            &lt;html lang=&quot;en&quot;&gt;
-              &lt;head&gt;
-                &lt;meta charset=&quot;UTF-8&quot;&gt;
-                &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-                &lt;title&gt;Document&lt;/title&gt;
-              &lt;/head&gt;
-              &lt;body&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-              &lt;/body&gt;
-            &lt;/html&gt;
+&lt;/body&gt;
+&lt;/html&gt;
           </pre
             >
 
@@ -249,11 +251,46 @@
               </li>
             </ul>
           </section>
+          <section class="section-content">
+            <div class="slider">
+              <scroll-container class="slider-container">
+                <scroll-page class="slider-slide" id="video-1">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/E5ENWEcoDdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </scroll-page>
+
+                <scroll-page class="slider-slide" id="video-2">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/E5ENWEcoDdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </scroll-page>
+
+                <scroll-page class="slider-slide" id="video-3">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/E5ENWEcoDdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </scroll-page>
+              </scroll-container>
+              <div class="slider-bullet-list">
+                <a href="#video-1"class="slider-bullet"></a>
+                <a href="#video-2"class="slider-bullet"></a>
+                <a href="#video-3"class="slider-bullet"></a>
+              </div>
+            </div>
+          </section>
 
           <p>
             Si tienes alguna pregunta escríbeme a
             <a href="mailto:herwingmacias@gmail.com">herwingmacias@gmail.com</a>
           </p>
+
+          <section class="section-content">
+            <h2>Sucribete a nuestro newsletter</h2>
+            <form action="" class="form">
+              <label for="nombre">
+                <input type="text" id="nombre" placeholder="Nombre" autocomplete="name" required>
+              </label>
+              <label for="email">
+                <input type="email" id="email" placeholder="Correo electrónico" autocomplete="email" required>
+              </label>
+              <input type="submit" value="Suscribirme">
+            </form>
+          </section>
           <script>
             const $detailsList = document.querySelectorAll("details");
             $detailsList.forEach(($details) => {
